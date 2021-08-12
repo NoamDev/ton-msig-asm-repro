@@ -1,0 +1,8 @@
+solc
+stdlib_sol.tvm
+tvm_linker
+.gitignore
+sources/*.tvc
+sources/*.code
+original/*.code
+*.abi.json
