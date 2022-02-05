@@ -1,15 +1,20 @@
 # Free TON Multisig Assembly Reproduction
 
+## Prerequisite
+
+ - Node.js >= 14.x installed
+
 ## Instructions
 First (After you clone the repo of course) get solc v0.21 by running:
 ``` bash
-$ ./install_0_21_solc.sh
+bash setup_tool.sh [compiler_commit] [linker_version]
+bash setup_tool.sh 1657b4f3541f19f3d23f87ac32800efe714bccc7 latest
 ```
 Then, get the latest version of tvm linker in whatever way you want, and place the `tvm_linker` executable in the repository's root directory.
 After that, you can run:
 ``` bash
-./verify_optimized.sh SafeMultisigWallet
-./verify_optimized.sh SetcodeMultisigWallet
-./verify_optimized.sh SafeMultisigWallet24
-./verify.sh SetcodeMultisigWallet24
+bash verify_optimized.sh SafeMultisigWallet
+bash verify_optimized.sh SetcodeMultisigWallet
+bash verify_optimized.sh SafeMultisigWallet24
+bash verify.sh SetcodeMultisigWallet24
 ```  

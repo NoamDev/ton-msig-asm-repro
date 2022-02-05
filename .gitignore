@@ -1,6 +1,6 @@
 solc
-stdlib_sol.tvm
-tvm_linker
+tmp
+bin
 .gitignore
 sources/*.tvc
 sources/*.code
