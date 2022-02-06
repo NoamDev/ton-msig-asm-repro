@@ -18,3 +18,14 @@ bash verify_optimized.sh SetcodeMultisigWallet
 bash verify_optimized.sh SafeMultisigWallet24
 bash verify.sh SetcodeMultisigWallet24
 ```  
+
+To verify Surf Multisig Wallet, you need solc v0.28:
+
+``` bash
+bash setup_tool.sh b0f69a8615d084e0202886e1d9deab9de41cfe3b latest
+```
+
+Then, you can run:
+``` bash
+bash verify_optimized.sh SurfMultisigWallet
+```
